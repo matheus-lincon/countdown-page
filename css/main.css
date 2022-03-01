@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  position: relative;
+}
+
+/* CONTAINER */
+
+#container {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  margin-right: 1rem;
+  margin-left: 1rem;
+
+  overflow: hidden;
+}
+
+/* IMAGE */
+
+#main-image {
+  width: 40%;
+}
+
+#main-image {
+  display: none;
+}
+
+#top-image,
+#bottom-image {
+  position: absolute;
+  max-width: 100%;
+
+  z-index: -1;
+}
+
+#top-image {
+  top: 0;
+  left: 0;
+}
+
+#bottom-image {
+  bottom: 0;
+  left: 0;
+}
+
+/* TIMER CONTENT */
+
+#timer-content {
+  text-align: center;
+}
+
+#timer-content #description p {
+  max-width: 80%;
+  margin: 2.875rem auto;
+}
+
+/* COUNTDOWN */
+#countdown #countdown-header {
+  color: var(--purple);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  margin-bottom: 2.5rem;
+}
+
+/* TIMER */
+#timer {
+  color: var(--black);
+  font-size: 2.5rem;
+}
+
+#timer span {
+  margin-right: 10px;
+  margin-left: 10px;
+
+  position: relative;
+}
+
+/*---*/
+
+#timer span.time::before {
+  content: '';
+  position: absolute;
+
+  font-size: 12px;
+  color: var(--light-gray);
+
+  top: -20px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#timer #days::before {
+  content: 'Dias';
+}
+
+#timer #hours::before {
+  content: 'Horas';
+}
+
+#timer #minutes::before {
+  content: 'Minutos';
+}
+
+#timer #seconds::before {
+  content: 'Segundos';
+}
+
+/*---*/
+
+#timer #days {
+  margin-left: 0;
+}
+
+#timer #seconds {
+  margin-right: 0;
+}
+
+/* DESCRIPTION */
+#description p {
+  text-align: center;
+  color: var(--text-color);
+  font-size: 0.875rem;
+}
+
+/* BUTTON */
+.button {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: var(--purple);
+  padding: 0.625rem;
+  border-radius: 10px;
+
+  width: 50%;
+  margin: 2.875rem auto 0 auto;
+
+  transition: 0.5s;
+}
+
+/* Media Queries*/
+@media (min-width: 769px) {
+  #main-image {
+    margin-left: 4rem;
+    display: block;
+    width: 50%;
+  }
+
+  #main-image #rocket-image {
+    width: 100%;
+  }
+}
