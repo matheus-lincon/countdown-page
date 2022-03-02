@@ -66,6 +66,8 @@ body {
 #timer-content #description p {
   max-width: 80%;
   margin: 2.875rem auto;
+  
+  font-family: var(--main-font);
 }
 
 /* COUNTDOWN */
