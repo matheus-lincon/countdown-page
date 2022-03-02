@@ -67,7 +67,6 @@ body {
 #countdown #countdown-header {
   color: var(--purple);
   text-transform: uppercase;
-  letter-spacing: 2px;
 
   margin-bottom: 2.5rem;
 }
