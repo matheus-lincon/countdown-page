@@ -16,6 +16,7 @@ As tecnologias usadas foram:
 
 - HTML
 - CSS
+- JavaScript
 
 ---
 
