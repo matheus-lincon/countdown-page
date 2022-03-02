@@ -159,6 +159,142 @@ body {
   font-family: var(--main-font);
 }
 
+/* MODAL */
+#modal {
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+
+  top: 0;
+
+  height: 0;
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: var(--main-font);
+
+  transition: 0.5s;
+
+  visibility: hidden;
+  opacity: 0;
+
+  overflow: hidden;
+}
+
+form {
+  background-color: var(--purple);
+
+  width: 300px;
+  min-width: 40%;
+
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 0px 10px #f8f8f8;
+
+  position: relative;
+}
+
+form .label {
+  margin-bottom: 4px;
+  display: block;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+form input {
+  margin-bottom: 30px;
+  padding: 0.7rem;
+  border-radius: 0 1rem 1rem 0;
+  border: none;
+  color: var(--black);
+
+  width: 100%;
+}
+
+form input[type='text'] {
+  text-transform: capitalize;
+}
+
+form #close-button {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+form #close-button button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: #f8f8f8;
+
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* active modal */
+#modal.active {
+  visibility: visible;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  height: 100vh;
+
+  transition: 0.5s;
+}
+
+/* MODAL BUTTON */
+#button-area button {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: #f8f8f8;
+
+  cursor: pointer;
+
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  box-shadow: 0px 6px 0px #ccc;
+}
+
+#button-area button:active {
+  box-shadow: none;
+  transform: translateY(6px);
+}
+
+/* SUCCESS MESSAGE */
+.message {
+  position: absolute;
+  top: -20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.message.success,
+.message.error {
+  top: 30px;
+
+  opacity: 1;
+  visibility: visible;
+
+  transition: 0.3s;
+}
+
+#success-submit {
+  color: var(--success-color);
+}
+
+/* ERROR MESSAGE */
+
+#error-submit {
+  color: var(--error-color);
+}
+
 /* Media Queries*/
 @media (min-width: 769px) {
   #main-image {

@@ -3,6 +3,10 @@
   --purple: #6c63ff;
   --light-gray: #c8c8c8;
   --text-color: #9c9ab6;
-  --main-font: "Poppins", monospace;
+
+  --success-color: #93f593;
+  --error-color: #ef5350;
+
+  --main-font: 'Poppins', monospace;
   --timer-font: monospace;
 }

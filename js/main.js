@@ -1,3 +1,53 @@
+/* MODAL */
+
+const subscribeButton = document.querySelector('#subscribe')
+const closeModalButton = document.querySelector('.close-modal')
+const submitButton = document.querySelector('.submit-button')
+const modal = document.querySelector('#modal')
+const form = document.querySelector('#form')
+
+const successMessageBox = document.querySelector('#success-submit')
+const errorMessageBox = document.querySelector('#error-submit')
+
+//Events
+subscribeButton.addEventListener('click', () => {
+  modal.classList.toggle('active')
+  form.classList.toggle('active-drop')
+})
+
+closeModalButton.addEventListener('click', (e) => {
+  e.preventDefault()
+
+  modal.classList.toggle('active')
+  form.classList.toggle('active-drop')
+  form.reset()
+})
+
+submitButton.addEventListener('click', (e) => {
+  e.preventDefault()
+  if (
+    errorMessageBox.classList.contains('error') ||
+    successMessageBox.classList.contains('success')
+  )
+    return
+  if (!form.reportValidity()) {
+    errorMessageBox.classList.toggle('error')
+    setTimeout(() => {
+      errorMessageBox.classList.toggle('error')
+    }, 2000)
+  } else {
+    successMessageBox.classList.toggle('success')
+    setTimeout(() => {
+      successMessageBox.classList.toggle('success')
+    }, 2000)
+    form.reset()
+  }
+})
+
+//Functions
+
+/* COUNTDOWN */
+
 const daysElement = document.querySelector('#days')
 const hoursElement = document.querySelector('#hours')
 const minutesElement = document.querySelector('#minutes')

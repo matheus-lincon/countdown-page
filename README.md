@@ -20,6 +20,15 @@ As tecnologias usadas foram:
 
 ---
 
+## Requisitos
+
+- [x] - Página conter um _countdown_
+- [x] - Botão de "Inscreva-se"
+- [x] - Adicionar modal
+- [x] - Modal com formulário
+
+---
+
 ## Preview :computer:
 
 ### Desktop

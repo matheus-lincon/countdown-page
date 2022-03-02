@@ -46,6 +46,46 @@
           alt="Bottom image"
         />
       </div>
+
+      <div id="modal">
+        <form id="form">
+          <div id="close-button">
+            <button class="close-modal">X</button>
+          </div>
+          <div id="input-area">
+            <div id="username-area">
+              <label class="label" for="username">Nome:</label>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                required
+                autocomplete="off"
+              />
+            </div>
+            <div id="email-area">
+              <label class="label" for="email">E-mail:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                autocomplete="off"
+              />
+            </div>
+            <div id="button-area">
+              <button class="submit-button" type="button">Enviar</button>
+            </div>
+          </div>
+        </form>
+
+        <div class="message" id="success-submit">
+          <h4>Enviado com sucesso!</h4>
+        </div>
+        <div class="message" id="error-submit">
+          <h4>Preencha todos os campos!</h4>
+        </div>
+      </div>
     </main>
 
     <script src="./js/main.js"></script>
