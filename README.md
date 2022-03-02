@@ -31,6 +31,8 @@ As tecnologias usadas foram:
 
 ## Preview :computer:
 
+Acesse a página aqui: [Countdown Page](https://matheus-lincon.github.io/countdown-page/)
+
 ### Desktop
 
 <img src="./readme-files/desktop-preview.png" width="720px" />
