@@ -58,9 +58,16 @@ body {
   text-align: center;
 }
 
+#timer-display {
+  width: 100%
+}
+
+
 #timer-content #description p {
   max-width: 80%;
   margin: 2.875rem auto;
+  
+  font-family: var(--main-font);
 }
 
 /* COUNTDOWN */
@@ -69,12 +76,16 @@ body {
   text-transform: uppercase;
 
   margin-bottom: 2.5rem;
+  
+  font-family: var(--main-font);
 }
 
 /* TIMER */
 #timer {
   color: var(--black);
   font-size: 2.5rem;
+  
+  font-family: var(--timer-font);
 }
 
 #timer span {
@@ -90,13 +101,16 @@ body {
   content: '';
   position: absolute;
 
-  font-size: 12px;
+  font-size: 10px;
   color: var(--light-gray);
 
   top: -20px;
   right: 0;
   left: 0;
   bottom: 0;
+  
+  width: 100%;
+  font-family: var(--timer-font)
 }
 
 #timer #days::before {
@@ -145,6 +159,8 @@ body {
   margin: 2.875rem auto 0 auto;
 
   transition: 0.5s;
+  
+  font-family: var(--main-font)
 }
 
 /* Media Queries*/
