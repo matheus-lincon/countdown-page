@@ -2,7 +2,7 @@
 
 ## Sobre o projeto :information_source:
 
-Esse projeto foi tirado de um dos desafiso do Discover, da plataforma [Rocketseat](https://app.rocketseat.com.br/discover).
+Esse projeto foi tirado de um dos desafios do Discover, da plataforma [Rocketseat](https://app.rocketseat.com.br/discover).
 
 Um projeto que tem como objetivo mostrar o _countdown_ em uma página sobre algum evento, etc.
 
@@ -30,6 +30,8 @@ As tecnologias usadas foram:
 ---
 
 ## Preview :computer:
+
+Acesse a página aqui: [Countdown Page](https://matheus-lincon.github.io/countdown-page/)
 
 ### Desktop
 
