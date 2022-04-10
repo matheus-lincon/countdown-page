@@ -57,7 +57,7 @@ window.onload = () => {
   setInterval(startTimer, 1000)
 }
 
-let staticDate = new Date('Mar 31, 2022 12:24:27').getTime()
+let staticDate = new Date('May 31, 2022 12:24:27').getTime()
 
 const updateCountdown = (d, h, m, s) => {
   daysElement.innerText = d
